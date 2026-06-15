@@ -1,38 +1,115 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.25rem;
+}
+
+.tittle {
+  margin: 0;
+}
+
+.p {
+  margin: 0;
+  color: rgb(73, 73, 73);
+}
+
+.input-div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.input,
+.button {
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  font-size: medium;
+}
+
+.button {
+  background-color: #003641;
   color: white;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #30606b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter-div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.span-filter {
+  font-size: small;
+  color: gray;
+}
+
+.button-select {
+  padding: 0.25rem 1rem;
+}
+
+.list-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 36rem;
+  max-height: 36rem;
+  width: 100%;
+  background-color: #30606b2c;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  border-color: #0036415d;
+  overflow: auto;
+}
+
+.list-row {
+  width: 100%;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid;
+  border-color: #0036415a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  text-wrap: nowrap;
+}
+
+.span-task-name {
+  width: 100%;
+}
+
+.delete-button {
+  border: none;
+  color: white;
+  background-color: red;
+  border-radius: 0.25rem;
+  padding: 0px 0.5rem;
+}
+
+.delete-button:hover {
+  background-color: rgb(142, 0, 0);
 }
