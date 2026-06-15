@@ -113,3 +113,26 @@ body,
 .delete-button:hover {
   background-color: rgb(142, 0, 0);
 }
+
+.button-select:disabled,
+.button-select.active {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+ 
+.list-row.completed .span-task-name {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+ 
+.delete-button--hover {
+  opacity: 0.8;
+}
+ 
+.empty-msg {
+  text-align: center;
+  padding: 24px 0;
+  color: #888;
+  font-size: 0.95rem;
+}
+ 
